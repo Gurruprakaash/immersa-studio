@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-primary-fixed":"#001e2c","secondary":"#cabeff","on-error":"#690005","on-tertiary-fixed":"#002113","on-background":"#dfe2ef","primary":"#8ed5ff","on-secondary-fixed-variant":"#4918c8","tertiary-fixed":"#6ffbbe","on-secondary-container":"#b9aaff","tertiary-fixed-dim":"#4edea3","on-tertiary-container":"#004e34","surface-container-lowest":"#0a0e17","surface":"#0f131c","on-secondary":"#32009a","on-primary-container":"#004965","surface-bright":"#353943","surface-variant":"#31353f","surface-dim":"#0f131c","background":"#0f131c","on-secondary-fixed":"#1c0062","error":"#ffb4ab","primary-container":"#38bdf8","error-container":"#93000a","surface-container":"#1c2029","inverse-primary":"#00668a","on-tertiary":"#003824","on-error-container":"#ffdad6","surface-container-high":"#262a34","on-surface":"#dfe2ef","surface-tint":"#7bd0ff","on-surface-variant":"#bdc8d1","tertiary":"#56e5a9","inverse-on-surface":"#2c303a","secondary-container":"#4918c8","inverse-surface":"#dfe2ef","surface-container-highest":"#31353f","surface-container-low":"#181b25","outline-variant":"#3e484f","primary-fixed-dim":"#7bd0ff","tertiary-container":"#30c88f","on-primary":"#00354a","secondary-fixed-dim":"#cabeff","on-tertiary-fixed-variant":"#005236","secondary-fixed":"#e6deff","primary-fixed":"#c4e7ff","on-primary-fixed-variant":"#004c69","outline":"#87929a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","space-lg":"1rem","gutter":"0.75rem","space-md":"0.75rem","margin":"1rem","space-xl":"1.5rem"},"fontFamily":{"label-md":["Geist"],"body-sm":["Geist"],"code-sm":["Geist"],"headline-xl":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Geist"],"label-sm":["Geist"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Geist"]},"fontSize":{"label-md":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.01em","fontWeight":"500"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0","fontWeight":"400"}],"code-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0","fontWeight":"400"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-sm":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.005em","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[16.25rem] bg-surface-container-low border-r border-outline-variant/30 z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 flex items-center gap-space-sm px-space-lg border-b border-outline-variant/20"><img alt="Immersa Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UxRjRhOHp4MV7MI9jV_jGW7riXISqHX1V3tU4CIggF3u6CTvzNjWPE0B3ddtb9W-aRbz29_NveN1rlpwGpvW8PVUH4b3-r2yamPXhKbbPahTseHFSfV_sqTB_y0OTa6W2182l_KDHSraf8c54oz4gfZOw8NYdSf_jy9GmFWNcPl6FHOH4bqkfEwYi05KU-oFpsw6BIwdfYf2gi6kyUdojfblN2xAi484V7nXxDikGVSzX7c00zj5LLvdY"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Immersa</span><span class="font-label-sm text-label-sm text-primary font-semibold">Studio</span></div><span class="font-code-sm text-code-sm text-on-surface-variant/70">v2.4 Spatial</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant/60">Workspace</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-secondary-container text-on-surface font-semibold rounded-lg shadow-sm"><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-all bg-secondary-container text-on-surface font-semibold rounded-lg shadow-sm" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[1.25rem]">space_dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="explore" href="../explore_gallery/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">explore</span><span class="font-body-md text-body-md">Explore</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="my-projects" href="../my_projects_library/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">folder_special</span><span class="font-body-md text-body-md">My Projects</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="3d-models" href="../3d_model_explorer/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">view_in_ar</span><span class="font-body-md text-body-md">3D Models</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ar-preview" href="../ar_experience_preview/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">stream_apps</span><span class="font-body-md text-body-md">AR Preview</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="vr-worlds" href="../vr_environment_explorer/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">vrpano</span><span class="font-body-md text-body-md">VR Worlds</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="../studio_settings/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">tune</span><span class="font-body-md text-body-md">Settings</span></a></nav></div></div><div class="p-space-md flex flex-col gap-space-sm border-t border-outline-variant/20 bg-surface-container-lowest/40"><div class="flex items-center justify-between px-space-sm py-space-xs rounded bg-surface-container-high/40 border border-outline-variant/30"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="font-label-sm text-label-sm text-on-surface">Workspace Synced</span></div><span class="font-code-sm text-code-sm text-on-surface-variant/70">Cloud ID-4</span></div><div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-high transition-colors"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1KypNwueVUdqZAMNJf7dN_QRZf-04F0m6IGqJ2RSURCoftiO1DC3IyXdYIRGbDleAZ5yFX9cBoXdPeIdtlo0hgSm7-O8g5W3DalWSlmELGVXNyeo_FzS95FzEhhaqeXsU8YQQAryRmdR8VI3TiK6y99Q8ksF3sDBjflzTBU5gfaSygAagWtJNMHg1Po1kl3IPvfTkG7zfJZO7pDp6_mymwE4krybcV6LcXwe4y31sjBt3C3G-KsIQ"/><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">Elena Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Spatial Designer</span></div></div><button aria-label="Account Actions" class="text-on-surface-variant hover:text-on-surface transition-colors p-space-xs" type="button"><span class="material-symbols-outlined text-[1.125rem]">more_vert</span></button></div></div></aside><div class="pl-[16.25rem]"><header class="fixed top-0 left-[16.25rem] right-0 h-16 bg-surface-container-low/80 backdrop-blur-xl border-b border-outline-variant/30 z-40 px-6 flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant/70">Studio Canvas</span><span class="text-outline-variant/60">/</span><span class="font-label-md text-label-md text-on-surface font-medium">Workstation Active</span></div><div class="flex-1 max-w-md mx-space-xl"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-[1.125rem] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg border border-outline-variant/40 text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/60 focus:outline-none focus:border-primary-container transition-colors" placeholder="Search projects, 3D assets, environments..." type="text"/><kbd class="absolute right-space-sm px-1.5 py-0.5 rounded bg-surface-container-high border border-outline-variant/50 font-code-sm text-[0.625rem] text-on-surface-variant">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-lg rounded-lg bg-secondary-container hover:bg-secondary-container/90 text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[1.125rem]">add</span><span>New Project</span></button><div class="h-5 w-px bg-outline-variant/30"></div><button aria-label="Notifications" class="relative p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[1.25rem]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface-container-low"></span></button><button aria-label="Documentation" class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[1.25rem]">help</span></button><div class="h-8 w-8 rounded-full border border-outline-variant/50 overflow-hidden flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1KypNwueVUdqZAMNJf7dN_QRZf-04F0m6IGqJ2RSURCoftiO1DC3IyXdYIRGbDleAZ5yFX9cBoXdPeIdtlo0hgSm7-O8g5W3DalWSlmELGVXNyeo_FzS95FzEhhaqeXsU8YQQAryRmdR8VI3TiK6y99Q8ksF3sDBjflzTBU5gfaSygAagWtJNMHg1Po1kl3IPvfTkG7zfJZO7pDp6_mymwE4krybcV6LcXwe4y31sjBt3C3G-KsIQ"/></div></div></header><main class="w-full min-h-screen pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Dynamic Sidebar Active State Injector & Viewport Setup -->
+<script>
+    (() => {
+      const activeLink = document.querySelector('aside nav a[data-path="dashboard"]');
+      if (activeLink) {
+        activeLink.className = "flex items-center gap-space-md px-space-md py-space-sm rounded-lg bg-secondary-container text-on-surface font-semibold shadow-sm transition-all relative";
+        const dot = document.createElement("span");
+        dot.className = "absolute right-3 w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse";
+        activeLink.appendChild(dot);
+      }
+    })();
+  </script>
+<!-- Ambient Backdrop Glows (Contained) -->
+<div class="relative w-full overflow-hidden px-8 py-8 flex flex-col gap-10">
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-secondary-container/20 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute top-1/4 -right-24 w-80 h-80 bg-primary/10 rounded-full blur-[90px] pointer-events-none"></div>
+<div class="absolute bottom-20 left-1/3 w-96 h-96 bg-tertiary-container/10 rounded-full blur-[120px] pointer-events-none"></div>
+<!-- 1. Welcome Hero Section -->
+<section class="relative z-10 w-full rounded-2xl bg-gradient-to-r from-surface-container to-surface-container-low p-8 shadow-xl overflow-hidden">
+<div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-20 pointer-events-none hidden lg:block">
+<!-- SVG Wireframe Polyhedral Mesh -->
+<svg class="w-full h-full text-secondary" fill="none" stroke="currentColor" stroke-width="1.2" viewbox="0 0 320 320">
+<polygon points="160,20 280,90 280,230 160,300 40,230 40,90" stroke="currentColor" stroke-dasharray="4 4"></polygon>
+<polygon points="160,60 240,110 240,210 160,260 80,210 80,110" stroke="currentColor"></polygon>
+<line stroke="currentColor" x1="160" x2="160" y1="20" y2="300"></line>
+<line stroke="currentColor" x1="40" x2="280" y1="90" y2="230"></line>
+<line stroke="currentColor" x1="280" x2="40" y1="90" y2="230"></line>
+<circle class="fill-primary-container" cx="160" cy="160" r="8"></circle>
+<circle class="fill-secondary" cx="160" cy="60" r="4"></circle>
+<circle class="fill-secondary" cx="240" cy="110" r="4"></circle>
+<circle class="fill-secondary" cx="240" cy="210" r="4"></circle>
+<circle class="fill-secondary" cx="160" cy="260" r="4"></circle>
+<circle class="fill-secondary" cx="80" cy="210" r="4"></circle>
+<circle class="fill-secondary" cx="80" cy="110" r="4"></circle>
+</svg>
+</div>
+<div class="max-w-2xl flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/40 text-secondary font-label-sm text-label-sm tracking-wide uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Spatial Engine v2.4 Active
+          </span>
+<span class="text-on-surface-variant font-code-sm text-code-sm">Build 8904.22</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          Welcome back, <span class="bg-gradient-to-r from-on-surface via-primary to-secondary bg-clip-text text-transparent">Elena</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          Design, organize, and preview your AR/VR spaces in real-time. Pick up where you left off or instantiate a new spatial experience on the WebXR canvas.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md pt-2">
+<button class="h-10 px-space-xl rounded-lg bg-secondary-container hover:bg-secondary-container/90 text-on-surface font-label-md text-label-md flex items-center gap-space-sm shadow-md transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[1.25rem]">add_circle</span>
+<span>+ Create Project</span>
+</button>
+<a class="h-10 px-space-lg rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-space-sm shadow-sm transition-all" href="#explore-gallery">
+<span class="material-symbols-outlined text-[1.125rem]">travel_explore</span>
+<span>Explore Gallery</span>
+</a>
+<a class="font-label-md text-label-md text-primary hover:text-primary-fixed flex items-center gap-1 px-space-sm transition-colors group" href="#quickstart">
+<span>Documentation & Quickstart</span>
+<span class="material-symbols-outlined text-[1rem] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 2. Quick Access Experience Cards (3-column grid) -->
+<section class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Core Workstations</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Spatial Authoring Suites</h2>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[1rem] text-tertiary">check_circle</span>
+          WebGPU Hardware Accelerated
+        </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1: 3D Models Explorer -->
+<div class="group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 p-5 shadow-md hover:shadow-xl relative overflow-hidden">
+<div class="flex flex-col gap-4">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-fidelity 3D render of a futuristic ergonomic lounge chair in matte black polymer with subtle cyan ambient neon underglow, displayed on a clean architectural pedestal inside a dark obsidian spatial computing studio with faint coordinate grids." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvzMyes2hVbadW1mM7IFmW4IzihxEXzmN7rQjN_bqjH33GTPdDjwGUvkuTWp_IfFnmxbf-JJ0aJcJdj-oupg1j68yVx0PKwW7Qac51HkVi3Y4u94HU48jFJl8CLqw5DEQHzWw6MGj24mHDjFGFi624TeL09cCYuPnCXbsG1ZkRG6tuL-vv86o19sNU9hyAmR94dq3X8IWzrV2CzLWs7EuZOMbl4w6V0qLEKpLUmlb-7Ci7y1rxGkqO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="material-symbols-outlined text-[1rem] text-primary">view_in_ar</span>
+<span class="font-label-sm text-label-sm text-on-surface">Inspector</span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-surface-container-high/90 font-code-sm text-code-sm text-on-surface">
+                48.2k Poly
+              </div>
+</div>
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center justify-between">
+<span>3D Models Explorer</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-[1.25rem]">arrow_outward</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Inspect meshes, tweak textures & toggle wireframe with real-time PBR shaders and coordinate gizmos.
+              </p>
+</div>
+</div>
+<div class="pt-5 mt-auto">
+<a class="w-full h-9 rounded-lg bg-surface-container-high hover:bg-secondary-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 transition-colors" data-path="3d-models" href="../3d_model_explorer/code.html?immersa_access=1">
+<span class="material-symbols-outlined text-[1.125rem]">data_object</span>
+<span>Open 3D Viewer</span>
+</a>
+</div>
+</div>
+<!-- Card 2: AR Room Preview -->
+<div class="group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 p-5 shadow-md hover:shadow-xl relative overflow-hidden">
+<div class="flex flex-col gap-4">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Augmented reality perspective shot showing a glowing holographic mid-century credenza aligned onto the polished hardwood floor of a modern open-concept living room, highlighted by cyan ground occlusion tracking points and spatial depth anchors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjh6EpyEeIeltnsI15tuFV2hb_GRSuhdtIV2E3I-O7HJ1nijZUa_diHwd9iG8SfdDCmJOyzdkN3wbPbBhAHzgRH24NJUc8K0z92OR0mRgJuRuQkDok0w8w3q_Vz5Dk7mzib8gfWA_KuQUEj-9YXU4_7dN0KbWXOHVpNflJ_l50IL_EZv_FgT_WW4LRcf44fGO_iHkX_bviyf6uayCAnEbr1hta70CZPdUbx9QsgTE0Aww9mx0sISki"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="material-symbols-outlined text-[1rem] text-tertiary">stream_apps</span>
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Simulation</span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-surface-container-high/90 font-code-sm text-code-sm text-on-surface">
+                Plane Tracked
+              </div>
+</div>
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center justify-between">
+<span>AR Room Preview</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary transition-colors text-[1.25rem]">arrow_outward</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Test real-world scale, ground placement & dynamic lighting estimation on LiDAR-enabled environments.
+              </p>
+</div>
+</div>
+<div class="pt-5 mt-auto">
+<a class="w-full h-9 rounded-lg bg-surface-container-high hover:bg-tertiary-container hover:text-on-tertiary-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 transition-colors" data-path="ar-preview" href="../ar_experience_preview/code.html?immersa_access=1">
+<span class="material-symbols-outlined text-[1.125rem]">spatial_tracking</span>
+<span>Launch AR Simulation</span>
+</a>
+</div>
+</div>
+<!-- Card 3: VR Worlds Explorer -->
+<div class="group flex flex-col justify-between rounded-xl bg-surface-container-low hover:bg-surface-container transition-all duration-300 p-5 shadow-md hover:shadow-xl relative overflow-hidden">
+<div class="flex flex-col gap-4">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Stunning 360 virtual reality panoramic view inside an orbital space station observatory overlooking misty alien mountain peaks under a twilight violet nebula sky, architectural clean glass partitions and subtle technical HUD displays in the periphery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbTXBMzOsPgkWyDZ25DoO9NQwfOHZ7C45gNUmyIUaPs-JT0TtrgLNlsTT9vbB_kN9C1Phl8xqjwZe9y-o8ry4lGNN9mh_1CVVyaIR4W57AaK9w1jca-qJ7FpjEW_C-YjN8-x1guaXLBm4N0gtOrOOJYN-PJxicpJPadTzO8scOgit0Fkcc8AFdSR20MebmchduInGqpQoOyK4HN80pkZp1W89jVMEtKPLfsIjsTEF--nVerkNqSLWX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-lowest/80 backdrop-blur-md">
+<span class="material-symbols-outlined text-[1rem] text-secondary">vrpano</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Desktop Sim</span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-surface-container-high/90 font-code-sm text-code-sm text-on-surface">
+                60 FPS / 4K
+              </div>
+</div>
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center justify-between">
+<span>VR Worlds Explorer</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors text-[1.25rem]">arrow_outward</span>
+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Walkthrough virtual scenes with 360° desktop controls, teleport mechanics, and environmental audio nodes.
+              </p>
+</div>
+</div>
+<div class="pt-5 mt-auto">
+<a class="w-full h-9 rounded-lg bg-surface-container-high hover:bg-secondary-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 transition-colors" data-path="vr-worlds" href="../vr_environment_explorer/code.html?immersa_access=1">
+<span class="material-symbols-outlined text-[1.125rem]">explore</span>
+<span>Enter VR Scene</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Recent Projects Section -->
+<section class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<h2 class="font-headline-md text-headline-md text-on-surface">Recent Projects</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">4 active</span>
+</div>
+<a class="font-label-md text-label-md text-primary hover:text-primary-fixed flex items-center gap-1 transition-colors" data-path="my-projects" href="../my_projects_library/code.html?immersa_access=1">
+<span>View All (8)</span>
+<span class="material-symbols-outlined text-[1.125rem]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+<!-- Project A: Cyberpunk Cyber-Loft -->
+<div class="group flex flex-col rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-4 shadow-md hover:shadow-xl">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Atmospheric cyberpunk loft interior rendered in dark reflective materials with neon violet backlighting, spatial volumetric dust motes, holographic workstation desk, and floor-to-ceiling rain streaked skyscraper windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_hkBp031qoAax-egV9rYh4JGPg6o5Eh--U-JuDLUk6H7MBm174JR81DYhAGYuLPrLhO86wZj7B5YrkPWX9bQDxU-xM85vP_8ugAc1gOd6JRM4N1GSydflr1sPuCiwv3hA9yrYHRof5ExrC-nOOt9qR99ubApK92kUK2Z5Tq_UDpxfOgxOnP-wW_q7jP07HKJfvI_z_DmTGjtHfQnD-MO7tTVIgj9rcf7AqqURtqGXf2ScA4EkJd-O"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold">
+              VR Environment
+            </span>
+<div class="absolute top-2 right-2">
+<button aria-label="Context Menu" class="w-7 h-7 rounded-md bg-surface-container-lowest/80 text-on-surface hover:bg-surface-bright flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-3">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Cyberpunk Cyber-Loft</h3>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[0.875rem]">schedule</span>
+                2h ago
+              </span>
+<!-- Collaborators Avatar Stack -->
+<div class="flex -space-x-2">
+<div class="w-5 h-5 rounded-full ring-2 ring-surface-container-low bg-secondary flex items-center justify-center text-[0.625rem] text-on-secondary font-bold">EV</div>
+<div class="w-5 h-5 rounded-full ring-2 ring-surface-container-low bg-primary flex items-center justify-center text-[0.625rem] text-on-primary font-bold">MK</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project B: Nordic Minimalist Chair -->
+<div class="group flex flex-col rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-4 shadow-md hover:shadow-xl">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Scandinavian light oak wood curved arm chair against a smooth architectural concrete background with warm soft studio lighting and crisp geometric shadows, high polygon fidelity 3D asset model." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpzqyCijDU-38O6FhrM2JQJfPx6f4W5nYdLJyhu5nlNzgDYhI09bZzLU3ob9q2bAU8LWiq97lZa1M3dxVn4NTR5scSvzYD5WcSgPepUutCstdoxV0ePJMMIf6v8kAeu3VfrIsf0NTCXgoj9ObnQY4l7VsVbscGFwj7aazbIKv1gE5LAb4IOYVZXbVosXwP6IZLgCMyFkWMXjspXEkZlzxySNT9Nsa0e450hOFVua_dx2E2KEt-OKgv"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+              3D Model
+            </span>
+<div class="absolute top-2 right-2">
+<button aria-label="Context Menu" class="w-7 h-7 rounded-md bg-surface-container-lowest/80 text-on-surface hover:bg-surface-bright flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-3">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Nordic Minimalist Chair</h3>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[0.875rem]">schedule</span>
+                Yesterday
+              </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high">12.4 MB GLTF</span>
+</div>
+</div>
+</div>
+<!-- Project C: Smart Museum Artifact -->
+<div class="group flex flex-col rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-4 shadow-md hover:shadow-xl">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Ancient Greek marble bust highlighted with glowing augmented reality interaction rings, spatial audio markers, and textual annotation panels hovering in 3D perspective space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJAyxLodFSkuuVE0f6AkIrm4iyxT5ROVsNKlWSUmenfy6kVKrIY1igZ0z12aVyb9bfkHHxdVF7Zw7EBWfvpnqDu-TsA_NnU8vKBWF7yBRpg-fvz71jEaWa7oSsLBsuoeHZp14GCeyHQQIPVTmC1r5L9GnY3ANW7N1IwdcfaO0tWts8rdd9ugEjjWBlwzYAg3jvselnJTfuvWOUPUzASXiyoxpdkF-if3CpBZ1ozCs2QOSRY7PERu15"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-semibold">
+              AR Experience
+            </span>
+<div class="absolute top-2 right-2">
+<button aria-label="Context Menu" class="w-7 h-7 rounded-md bg-surface-container-lowest/80 text-on-surface hover:bg-surface-bright flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-3">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Smart Museum Artifact</h3>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[0.875rem]">schedule</span>
+                3 days ago
+              </span>
+<span class="text-tertiary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Tap to place
+              </span>
+</div>
+</div>
+</div>
+<!-- Project D: Solar System Explorer -->
+<div class="group flex flex-col rounded-xl bg-surface-container-low hover:bg-surface-container transition-all p-4 shadow-md hover:shadow-xl">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Interactive virtual reality solar system with photorealistic rings of Saturn, deep space stellar background, glowing orbital trajectory paths and astronomical scale markers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtU2lPNFpIgXauSUOekKPZtYLL7RVvcVUH_h_ObUChA_bIu233K1MU6AUUmHSh2lMuJN52djtsRrmn9CDe8x4BW_-kGyKf1p0a23COsOn8btRw3aCmWYdtIaPLVXzSo3DSOcjZP39WgXZ-9qtK0wQbw1PCzOdvCB03q6C95SnvA5dml1nnUo0IJIzLdFjQsSGFtzDAI2WTwB2ufAvDOeCgvbQ6qS54tJ7PqCL0Q5CFAcOI1mOAlFJS"/>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+              VR World
+            </span>
+<div class="absolute top-2 right-2">
+<button aria-label="Context Menu" class="w-7 h-7 rounded-md bg-surface-container-lowest/80 text-on-surface hover:bg-surface-bright flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-3">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Solar System Explorer</h3>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[0.875rem]">schedule</span>
+                5 days ago
+              </span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high">Orbits Active</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Featured Community Experiences Row -->
+<section class="flex flex-col gap-4" id="explore-gallery">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Spatial Inspiration</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Featured Community Experiences</h2>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Previous Slide" class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">chevron_left</span>
+</button>
+<button aria-label="Next Slide" class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Community 1 -->
+<div class="group relative rounded-xl bg-surface-container-low overflow-hidden shadow-md flex flex-col justify-end h-64 p-5 hover:shadow-xl transition-all">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="High-end modern Japanese zen interior architecture rendered for spatial headsets, displaying cedar slats, shallow reflection pond, and diffused morning daylight entering through translucent shoji screens." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCb2_AHNo0bB-iVRBxUMb3QHGMEiunfv7O7bcGrhpVDGCVnAqWbIaleYegPa4lukDk6EiQn91SLuoCMHAkYbSigxOk_KToliLd7lwVitFt4istUh_jPLBEpxa7FrCYDeTIlgWbZFx7WCoq_jexqpQd8SPIMBIArhfcB_Wpvv5A_wD-qC7a90Gj7uYKcNJpno8C1eggGy1WRs5BeVwYXIS98PU5wMCphpS5HpURxr_cv78KKZ94FYwp4')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary-container/30 text-primary font-label-sm text-label-sm">Architecture</span>
+<span class="text-on-surface-variant font-code-sm text-code-sm">by @KaitoDesign</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Modern Interior Architecture</h3>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[1rem] text-tertiary">visibility</span>
+                14.2k views
+              </span>
+<button class="px-3 py-1 rounded bg-surface-container-high hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span>Remix</span>
+<span class="material-symbols-outlined text-[0.875rem]">fork_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Community 2 -->
+<div class="group relative rounded-xl bg-surface-container-low overflow-hidden shadow-md flex flex-col justify-end h-64 p-5 hover:shadow-xl transition-all">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Vast futuristic space station command bridge overlooking a vibrant turquoise nebula and swirling planetary ring system, hard sci-fi aesthetic with ergonomic floating physical holographic control nodes." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDw2uedNQsEqBEBZTBx3JYmUd7QElSBlmJclUWZAglf8P24zZPq4I37GP79JtnHnQ6mUYDo-I63eb0gpz30iTmpaL5pseYQvjJsCoL6rI1_3iLF1W_vSbXOC7GAMkGnAMFdePvuNbrRfdlpHxxNlNVl1UfbRNGFV2j3eZE3Cd49XAKHyHVThEPuc7XD3ZJTHevG6MJGXKK5NAHxoHWzOG9BDSlx1JrLUA9xgs3qrEDUrSC4z3QteIz8')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">Sci-Fi World</span>
+<span class="text-on-surface-variant font-code-sm text-code-sm">by @VoxelForge</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Space Station Alpha</h3>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[1rem] text-tertiary">visibility</span>
+                9.8k views
+              </span>
+<button class="px-3 py-1 rounded bg-surface-container-high hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span>Remix</span>
+<span class="material-symbols-outlined text-[0.875rem]">fork_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Community 3 -->
+<div class="group relative rounded-xl bg-surface-container-low overflow-hidden shadow-md flex flex-col justify-end h-64 p-5 hover:shadow-xl transition-all">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Detailed augmented reality botanical glasshouse containing lush exotic tropical plants, luminous luminescent mosses, and airborne bio-particles with interactive botanical species classification cards." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA4CKm3Mtg3c_kbX3x4UDC6e1eXPcQEKpqaP_tes9irimn7ZmJ2RR3wD8kxkLUaPIZ1MnLGxdTfGTW8qY_VTYxA_VLAlsjAX7YWISEYqbQSJqSXnQ1zqJ8WKrRq4nsaw3jWfcAle4CYj3CzZILHDYazTpug0lrTyfA68Nn3TCiAvio3x4CDlG7vIeZEZ6lFAnAaYjkfyNvmHU80Zji5j2eL3jIpBWfUcR_U8EsxsMLLPl65wAgTnFMJ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm">Nature AR</span>
+<span class="text-on-surface-variant font-code-sm text-code-sm">by @FloraSpatial</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Botanical Garden AR</h3>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[1rem] text-tertiary">visibility</span>
+                21.5k views
+              </span>
+<button class="px-3 py-1 rounded bg-surface-container-high hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span>Remix</span>
+<span class="material-symbols-outlined text-[0.875rem]">fork_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Bottom Real-Time Telemetry & Engine Status Bar -->
+<footer class="mt-4 w-full rounded-xl bg-surface-container-low px-6 py-3.5 flex flex-wrap items-center justify-between gap-4 shadow-sm">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span>
+</span>
+<span class="font-label-md text-label-md text-on-surface">WebXR Engine Status:</span>
+<span class="font-label-md text-label-md text-tertiary font-medium">Online</span>
+</div>
+<div class="hidden sm:flex items-center gap-2 text-on-surface-variant font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[1rem] text-primary">speed</span>
+<span>60 FPS Workspace Target</span>
+</div>
+<div class="hidden md:flex items-center gap-2 text-on-surface-variant font-code-sm text-code-sm">
+<span class="material-symbols-outlined text-[1rem] text-secondary">cloud_done</span>
+<span>All projects synced to Cloud ID-4</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-code-sm text-code-sm">
+<span class="text-on-surface font-medium">VRAM:</span>
+<span>1.8 / 16 GB</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant font-code-sm text-code-sm">
+<span class="text-on-surface font-medium">Renderer:</span>
+<span>WebGPU v2</span>
+</div>
+</div>
+</footer>
+</div>
+</div></main></div>
+<script id="immersa-navigation-pipeline">
+(function () {
+  const LOGIN = "../login_welcome/code.html";
+  const ROUTES = {
+    "dashboard": "../main_dashboard/code.html", "explore": "../explore_gallery/code.html",
+    "my-projects": "../my_projects_library/code.html", "create-project": "../create_project/code.html",
+    "3d-models": "../3d_model_explorer/code.html", "ar-preview": "../ar_experience_preview/code.html",
+    "vr-worlds": "../vr_environment_explorer/code.html", "settings": "../studio_settings/code.html"
+  };
+  const isLogin = /\/login_welcome\/code\.html$/i.test(location.pathname);
+  const access = new URLSearchParams(location.search).get("immersa_access") === "1";
+  try {
+    if (access) sessionStorage.setItem("immersa_pipeline_access", "1");
+    if (!isLogin && !access && sessionStorage.getItem("immersa_pipeline_access") !== "1") {
+      location.replace(LOGIN); return;
+    }
+  } catch (e) {
+    if (!isLogin && !access) { location.replace(LOGIN); return; }
+  }
+  function go(route) { if (ROUTES[route]) location.href = ROUTES[route] + "?immersa_access=1"; }
+  document.querySelectorAll("a[data-path]").forEach(function (a) {
+    const route = a.getAttribute("data-path");
+    if (ROUTES[route]) a.setAttribute("href", ROUTES[route] + "?immersa_access=1");
+  });
+  document.addEventListener("click", function (event) {
+    const link = event.target.closest("a[data-path]");
+    if (link) {
+      const route = link.getAttribute("data-path");
+      if (ROUTES[route]) { event.preventDefault(); go(route); return; }
+    }
+    const el = event.target.closest("a,button");
+    if (!el) return;
+    const label = (el.innerText || el.getAttribute("aria-label") || el.title || "").replace(/\s+/g, " ").trim().toLowerCase();
+    if (isLogin) return;
+    if (/\b(log ?out|exit workspace)\b/.test(label)) {
+      event.preventDefault(); try { sessionStorage.removeItem("immersa_pipeline_access"); } catch(e) {}
+      location.href = LOGIN; return;
+    }
+    if (/\b(new project|create project|add project)\b/.test(label) && !/\/create_project\/code\.html$/i.test(location.pathname)) { event.preventDefault(); go("create-project"); return; }
+    if (/\b(view in ar|launch ar simulation|ar preview)\b/.test(label)) { event.preventDefault(); go("ar-preview"); return; }
+    if (/\b(open 3d viewer|3d models|view model)\b/.test(label)) { event.preventDefault(); go("3d-models"); return; }
+    if (/\b(enter vr scene|vr worlds|launch vr)\b/.test(label)) { event.preventDefault(); go("vr-worlds"); return; }
+    if (/\b(view all|my projects|return to projects)\b/.test(label)) { event.preventDefault(); go("my-projects"); return; }
+    if (/\b(back to dashboard|exit to dashboard|return to dashboard|dashboard)\b/.test(label)) { event.preventDefault(); go("dashboard"); }
+  }, true);
+})();
+</script>
+
+</body></html>

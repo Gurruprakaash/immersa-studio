@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-primary-fixed":"#001e2c","secondary":"#cabeff","on-error":"#690005","on-tertiary-fixed":"#002113","on-background":"#dfe2ef","primary":"#8ed5ff","on-secondary-fixed-variant":"#4918c8","tertiary-fixed":"#6ffbbe","on-secondary-container":"#b9aaff","tertiary-fixed-dim":"#4edea3","on-tertiary-container":"#004e34","surface-container-lowest":"#0a0e17","surface":"#0f131c","on-secondary":"#32009a","on-primary-container":"#004965","surface-bright":"#353943","surface-variant":"#31353f","surface-dim":"#0f131c","background":"#0f131c","on-secondary-fixed":"#1c0062","error":"#ffb4ab","primary-container":"#38bdf8","error-container":"#93000a","surface-container":"#1c2029","inverse-primary":"#00668a","on-tertiary":"#003824","on-error-container":"#ffdad6","surface-container-high":"#262a34","on-surface":"#dfe2ef","surface-tint":"#7bd0ff","on-surface-variant":"#bdc8d1","tertiary":"#56e5a9","inverse-on-surface":"#2c303a","secondary-container":"#4918c8","inverse-surface":"#dfe2ef","surface-container-highest":"#31353f","surface-container-low":"#181b25","outline-variant":"#3e484f","primary-fixed-dim":"#7bd0ff","tertiary-container":"#30c88f","on-primary":"#00354a","secondary-fixed-dim":"#cabeff","on-tertiary-fixed-variant":"#005236","secondary-fixed":"#e6deff","primary-fixed":"#c4e7ff","on-primary-fixed-variant":"#004c69","outline":"#87929a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","space-lg":"1rem","gutter":"0.75rem","space-md":"0.75rem","margin":"1rem","space-xl":"1.5rem"},"fontFamily":{"label-md":["Geist"],"body-sm":["Geist"],"code-sm":["Geist"],"headline-xl":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Geist"],"label-sm":["Geist"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Geist"]},"fontSize":{"label-md":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.01em","fontWeight":"500"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0","fontWeight":"400"}],"code-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0","fontWeight":"400"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-sm":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.005em","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[16.25rem] bg-surface-container-low border-r border-outline-variant/30 z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 flex items-center gap-space-sm px-space-lg border-b border-outline-variant/20"><img alt="Immersa Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UxRjRhOHp4MV7MI9jV_jGW7riXISqHX1V3tU4CIggF3u6CTvzNjWPE0B3ddtb9W-aRbz29_NveN1rlpwGpvW8PVUH4b3-r2yamPXhKbbPahTseHFSfV_sqTB_y0OTa6W2182l_KDHSraf8c54oz4gfZOw8NYdSf_jy9GmFWNcPl6FHOH4bqkfEwYi05KU-oFpsw6BIwdfYf2gi6kyUdojfblN2xAi484V7nXxDikGVSzX7c00zj5LLvdY"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Immersa</span><span class="font-label-sm text-label-sm text-primary font-semibold">Studio</span></div><span class="font-code-sm text-code-sm text-on-surface-variant/70">v2.4 Spatial</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant/60">Workspace</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-secondary-container text-on-surface font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="../main_dashboard/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">space_dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="explore" href="../explore_gallery/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">explore</span><span class="font-body-md text-body-md">Explore</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="my-projects" href="../my_projects_library/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">folder_special</span><span class="font-body-md text-body-md">My Projects</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="3d-models" href="../3d_model_explorer/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">view_in_ar</span><span class="font-body-md text-body-md">3D Models</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ar-preview" href="../ar_experience_preview/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">stream_apps</span><span class="font-body-md text-body-md">AR Preview</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="vr-worlds" href="../vr_environment_explorer/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">vrpano</span><span class="font-body-md text-body-md">VR Worlds</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-all bg-secondary-container text-on-surface font-semibold rounded-lg shadow-sm" data-path="settings" href="#"><span class="material-symbols-outlined text-[1.25rem]">tune</span><span class="font-body-md text-body-md">Settings</span></a></nav></div></div><div class="p-space-md flex flex-col gap-space-sm border-t border-outline-variant/20 bg-surface-container-lowest/40"><div class="flex items-center justify-between px-space-sm py-space-xs rounded bg-surface-container-high/40 border border-outline-variant/30"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="font-label-sm text-label-sm text-on-surface">Workspace Synced</span></div><span class="font-code-sm text-code-sm text-on-surface-variant/70">Cloud ID-4</span></div><div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-high transition-colors"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1KypNwueVUdqZAMNJf7dN_QRZf-04F0m6IGqJ2RSURCoftiO1DC3IyXdYIRGbDleAZ5yFX9cBoXdPeIdtlo0hgSm7-O8g5W3DalWSlmELGVXNyeo_FzS95FzEhhaqeXsU8YQQAryRmdR8VI3TiK6y99Q8ksF3sDBjflzTBU5gfaSygAagWtJNMHg1Po1kl3IPvfTkG7zfJZO7pDp6_mymwE4krybcV6LcXwe4y31sjBt3C3G-KsIQ"/><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">Elena Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Spatial Designer</span></div></div><button aria-label="Account Actions" class="text-on-surface-variant hover:text-on-surface transition-colors p-space-xs" type="button"><span class="material-symbols-outlined text-[1.125rem]">more_vert</span></button></div></div></aside><div class="pl-[16.25rem]"><header class="fixed top-0 left-[16.25rem] right-0 h-16 bg-surface-container-low/80 backdrop-blur-xl border-b border-outline-variant/30 z-40 px-6 flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant/70">Studio Canvas</span><span class="text-outline-variant/60">/</span><span class="font-label-md text-label-md text-on-surface font-medium">Workstation Active</span></div><div class="flex-1 max-w-md mx-space-xl"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-[1.125rem] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg border border-outline-variant/40 text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/60 focus:outline-none focus:border-primary-container transition-colors" placeholder="Search projects, 3D assets, environments..." type="text"/><kbd class="absolute right-space-sm px-1.5 py-0.5 rounded bg-surface-container-high border border-outline-variant/50 font-code-sm text-[0.625rem] text-on-surface-variant">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-lg rounded-lg bg-secondary-container hover:bg-secondary-container/90 text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[1.125rem]">add</span><span>New Project</span></button><div class="h-5 w-px bg-outline-variant/30"></div><button aria-label="Notifications" class="relative p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[1.25rem]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface-container-low"></span></button><button aria-label="Documentation" class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[1.25rem]">help</span></button><div class="h-8 w-8 rounded-full border border-outline-variant/50 overflow-hidden flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1KypNwueVUdqZAMNJf7dN_QRZf-04F0m6IGqJ2RSURCoftiO1DC3IyXdYIRGbDleAZ5yFX9cBoXdPeIdtlo0hgSm7-O8g5W3DalWSlmELGVXNyeo_FzS95FzEhhaqeXsU8YQQAryRmdR8VI3TiK6y99Q8ksF3sDBjflzTBU5gfaSygAagWtJNMHg1Po1kl3IPvfTkG7zfJZO7pDp6_mymwE4krybcV6LcXwe4y31sjBt3C3G-KsIQ"/></div></div></header><main class="w-full min-h-screen pt-16 bg-surface"><div class="flex flex-col w-full">
+<div class="px-8 py-8 max-w-7xl mx-auto w-full flex flex-col gap-8">
+<!-- Top Action / Context Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2 text-on-surface-variant font-code-sm text-code-sm tracking-wider uppercase">
+<span class="inline-block w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Cloud Configuration Active</span>
+<span>/</span>
+<span class="text-primary">All changes saved automatically</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Studio Settings & Preferences</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Manage your designer identity, WebGPU viewport rendering preferences, canvas accent themes, and spatial accessibility options across all synchronized workstations.
+        </p>
+</div>
+<div class="flex items-center gap-3">
+<button class="h-9 px-4 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-2 transition-all" id="btn-save-notice" type="button">
+<span class="material-symbols-outlined text-[1.125rem] text-tertiary">cloud_done</span>
+<span>Engine Synced</span>
+</button>
+<a class="h-9 px-4 rounded-lg bg-secondary-container hover:bg-secondary-container/90 text-on-surface font-label-md text-label-md flex items-center gap-2 transition-all shadow-sm" data-path="dashboard" href="../main_dashboard/code.html?immersa_access=1">
+<span class="material-symbols-outlined text-[1.125rem]">arrow_back</span>
+<span>Return to Dashboard</span>
+</a>
+</div>
+</div>
+<!-- Navigation Pills / Section Jump Anchors -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 border-none scrollbar-none">
+<button class="tab-btn px-4 py-2 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-2 flex-shrink-0 transition-colors" onclick="scrollToSection('section-profile')" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">badge</span>
+<span>General & Profile</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-2 flex-shrink-0 transition-colors" onclick="scrollToSection('section-theme')" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">palette</span>
+<span>Appearance & Theme</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-2 flex-shrink-0 transition-colors" onclick="scrollToSection('section-engine')" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">view_in_ar</span>
+<span>Rendering & WebXR</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-2 flex-shrink-0 transition-colors" onclick="scrollToSection('section-accessibility')" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">accessibility_new</span>
+<span>Accessibility</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-2 flex-shrink-0 transition-colors" onclick="scrollToSection('section-system')" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">info</span>
+<span>About & System</span>
+</button>
+</div>
+<!-- Main Settings Form Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Core Column: Profile, Appearance, Engine, Accessibility -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- SECTION A: PROFILE & WORKSPACE INFO -->
+<section class="bg-surface-container-low rounded-xl p-6 flex flex-col gap-6 shadow-sm" id="section-profile">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[1.25rem]">badge</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Profile & Workspace Info</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Global credentials attached to scenes, collaborative mesh anchors, and asset forks.</p>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm">Cloud Identity</span>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-5 p-4 rounded-lg bg-surface-container">
+<div class="relative w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container-high">
+<img alt="Elena Vance profile headshot" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1KypNwueVUdqZAMNJf7dN_QRZf-04F0m6IGqJ2RSURCoftiO1DC3IyXdYIRGbDleAZ5yFX9cBoXdPeIdtlo0hgSm7-O8g5W3DalWSlmELGVXNyeo_FzS95FzEhhaqeXsU8YQQAryRmdR8VI3TiK6y99Q8ksF3sDBjflzTBU5gfaSygAagWtJNMHg1Po1kl3IPvfTkG7zfJZO7pDp6_mymwE4krybcV6LcXwe4y31sjBt3C3G-KsIQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="absolute bottom-1 right-1 w-3 h-3 rounded-full bg-tertiary"></span>
+</div>
+<div class="flex flex-col gap-1 min-w-0 flex-1">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Elena Vance</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-code-sm text-[0.6875rem]">PRO SPATIAL</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">elena.vance@studio.immersa.internal</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">Primary Node: US-East-Spatial-04</span>
+</div>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors self-start sm:self-auto" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">photo_camera</span>
+<span>Change Avatar</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="display-name">Display Name</label>
+<input class="h-10 px-3.5 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="display-name" type="text" value="Elena Vance"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="designer-role">Role / Spatial Title</label>
+<input class="h-10 px-3.5 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="designer-role" type="text" value="Lead Spatial Experience Designer"/>
+</div>
+<div class="flex flex-col gap-1.5 sm:col-span-2">
+<label class="font-label-md text-label-md text-on-surface" for="workspace-name">Workspace Name</label>
+<div class="relative flex items-center">
+<input class="w-full h-10 pl-3.5 pr-28 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="workspace-name" type="text" value="Elena's Creative Lab (Pro Plan)"/>
+<span class="absolute right-3 font-code-sm text-code-sm text-tertiary flex items-center gap-1 pointer-events-none">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Active Node
+                </span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION B: APPEARANCE & THEME CUSTOMIZATION -->
+<section class="bg-surface-container-low rounded-xl p-6 flex flex-col gap-6 shadow-sm" id="section-theme">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[1.25rem]">palette</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Appearance & Theme Customization</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calibrate contrast ratios, panel luminosity, and active coordinate emitter hues.</p>
+</div>
+</div>
+<!-- Theme Base Picker -->
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-label-md text-on-surface">Workspace Canvas Theme</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<!-- Dark Navy (Active) -->
+<label class="cursor-pointer relative flex flex-col gap-2 p-3.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<input checked="" class="sr-only peer" name="studio_theme" type="radio" value="navy"/>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Dark Navy</span>
+<span class="w-4 h-4 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container opacity-100 peer-checked:opacity-100">
+<span class="material-symbols-outlined text-[0.75rem] font-bold">check</span>
+</span>
+</div>
+<div class="h-14 rounded-lg bg-surface-container-lowest p-2 flex flex-col justify-between">
+<div class="flex gap-1.5">
+<span class="w-2.5 h-2.5 rounded bg-primary"></span>
+<span class="w-2.5 h-2.5 rounded bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded bg-tertiary"></span>
+</div>
+<span class="font-code-sm text-[0.625rem] text-on-surface-variant">Default #0F131C</span>
+</div>
+<span class="font-body-sm text-[0.6875rem] text-on-surface-variant">Deep charcoal & dark navy spatial slate</span>
+<span class="absolute inset-0 rounded-xl pointer-events-none ring-2 ring-primary-container"></span>
+</label>
+<!-- Obsidian Pitch -->
+<label class="cursor-pointer relative flex flex-col gap-2 p-3.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<input class="sr-only peer" name="studio_theme" type="radio" value="obsidian"/>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Obsidian Pitch</span>
+<span class="w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant opacity-0 peer-checked:opacity-100 peer-checked:bg-primary-container peer-checked:text-on-primary-container">
+<span class="material-symbols-outlined text-[0.75rem] font-bold">check</span>
+</span>
+</div>
+<div class="h-14 rounded-lg bg-black p-2 flex flex-col justify-between">
+<div class="flex gap-1.5">
+<span class="w-2.5 h-2.5 rounded bg-white"></span>
+<span class="w-2.5 h-2.5 rounded bg-surface-variant"></span>
+</div>
+<span class="font-code-sm text-[0.625rem] text-on-surface-variant">OLED Pitch #000000</span>
+</div>
+<span class="font-body-sm text-[0.6875rem] text-on-surface-variant">Pure black baseline for contrast-critical VR work</span>
+</label>
+<!-- Light Studio -->
+<label class="cursor-pointer relative flex flex-col gap-2 p-3.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors">
+<input class="sr-only peer" name="studio_theme" type="radio" value="light"/>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Light Studio</span>
+<span class="w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant opacity-0 peer-checked:opacity-100 peer-checked:bg-primary-container peer-checked:text-on-primary-container">
+<span class="material-symbols-outlined text-[0.75rem] font-bold">check</span>
+</span>
+</div>
+<div class="h-14 rounded-lg bg-[#dfe2ef] p-2 flex flex-col justify-between">
+<div class="flex gap-1.5">
+<span class="w-2.5 h-2.5 rounded bg-[#004965]"></span>
+<span class="w-2.5 h-2.5 rounded bg-[#4918c8]"></span>
+</div>
+<span class="font-code-sm text-[0.625rem] text-[#2c303a]">Studio High-Key #F0F4F8</span>
+</div>
+<span class="font-body-sm text-[0.6875rem] text-on-surface-variant">High ambient lighting review mode</span>
+</label>
+</div>
+</div>
+<!-- Accent Emitter Colors -->
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-label-md text-on-surface">Active Accent Emitter Hue</span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<!-- Electric Violet -->
+<button class="accent-btn flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-left transition-colors relative ring-1 ring-secondary-container" type="button">
+<span class="w-4 h-4 rounded-full bg-secondary-container flex-shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Electric Violet</span>
+<span class="font-code-sm text-[0.625rem] text-on-surface-variant">#7C5CFC</span>
+</div>
+</button>
+<!-- Soft Cyan -->
+<button class="accent-btn flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-left transition-colors" type="button">
+<span class="w-4 h-4 rounded-full bg-primary-container flex-shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Soft Cyan</span>
+<span class="font-code-sm text-[0.625rem] text-on-surface-variant">#38BDF8</span>
+</div>
+</button>
+<!-- Emerald Neon -->
+<button class="accent-btn flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-left transition-colors" type="button">
+<span class="w-4 h-4 rounded-full bg-tertiary flex-shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Emerald Neon</span>
+<span class="font-code-sm text-[0.625rem] text-on-surface-variant">#10B981</span>
+</div>
+</button>
+<!-- Amber Gold -->
+<button class="accent-btn flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-left transition-colors" type="button">
+<span class="w-4 h-4 rounded-full bg-[#f59e0b] flex-shrink-0"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Amber Gold</span>
+<span class="font-code-sm text-[0.625rem] text-on-surface-variant">#F59E0B</span>
+</div>
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION C: VIEWPORT & 3D ENGINE PREFERENCES -->
+<section class="bg-surface-container-low rounded-xl p-6 flex flex-col gap-6 shadow-sm" id="section-engine">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[1.25rem]">view_in_ar</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Viewport & 3D Engine Preferences</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Configure the real-time WebGL/WebGPU graphics pipeline, orbit mechanics, and shader precision.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Graphics Backend -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="engine-backend">Default Graphics Backend</label>
+<select class="h-10 px-3 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" id="engine-backend">
+<option selected="">WebGPU Accelerated (Recommended)</option>
+<option>WebGL 2.0 Fallback Pipeline</option>
+<option>Software Emulated (Testing)</option>
+</select>
+</div>
+<!-- Framerate Cap -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="fps-cap">Viewport Framerate Cap</label>
+<select class="h-10 px-3 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" id="fps-cap">
+<option>30 FPS (Battery Saver)</option>
+<option selected="">60 FPS (VSync)</option>
+<option>90 FPS (VR Passthrough)</option>
+<option>120 FPS (Pro Motion Display)</option>
+<option>Uncapped Engine Refresh</option>
+</select>
+</div>
+<!-- Navigation Mode -->
+<div class="flex flex-col gap-1.5 sm:col-span-2">
+<label class="font-label-md text-label-md text-on-surface" for="nav-mode">Default 3D Navigation Mode</label>
+<select class="h-10 px-3 rounded-lg bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" id="nav-mode">
+<option selected="">Orbit Turntable (Blender / Maya style)</option>
+<option>First-Person WASD Free-Fly Camera</option>
+<option>Arcball Inertial Rotation</option>
+<option>CAD Pan & Constrained Axis Orbit</option>
+</select>
+</div>
+</div>
+<!-- Feature Toggles -->
+<div class="flex flex-col gap-3 pt-2">
+<!-- Shader Precision -->
+<label class="flex items-start justify-between gap-4 p-3.5 rounded-lg bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface">High Precision Shaders</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Enables 32-bit floating point depth buffers and full PBR roughness interpolation on all active viewports.</span>
+</div>
+<input checked="" class="mt-1 w-5 h-5 rounded bg-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</label>
+<!-- Ambient Occlusion Baking -->
+<label class="flex items-start justify-between gap-4 p-3.5 rounded-lg bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface">Auto-baking Ambient Occlusion</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automatically pre-calculates ground contact shadows and cavity lighting when static meshes are locked.</span>
+</div>
+<input checked="" class="mt-1 w-5 h-5 rounded bg-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</label>
+<!-- Frustum Culling Telemetry -->
+<label class="flex items-start justify-between gap-4 p-3.5 rounded-lg bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-on-surface">Aggressive Frustum Occlusion Culling</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Drops offscreen vertex draw calls during intense VR scene simulation to preserve 90 FPS target.</span>
+</div>
+<input checked="" class="mt-1 w-5 h-5 rounded bg-surface accent-primary-container cursor-pointer" type="checkbox"/>
+</label>
+</div>
+</section>
+<!-- SECTION D: ACCESSIBILITY & USABILITY -->
+<section class="bg-surface-container-low rounded-xl p-6 flex flex-col gap-6 shadow-sm" id="section-accessibility">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[1.25rem]">accessibility_new</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Accessibility & Usability</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Adjust ergonomics, high contrast edge delimiters, and vestibular motion controls.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Reduce Motion -->
+<label class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Reduce Motion</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Replace camera swoops and 3D parallax transitions with instantaneous fades.</span>
+</div>
+<input class="w-5 h-5 rounded bg-surface accent-primary cursor-pointer" type="checkbox"/>
+</label>
+<!-- High Contrast UI Borders -->
+<label class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">High Contrast UI Delimiters</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reinforces subtle canvas borders with distinct luminous cyan boundary lines.</span>
+</div>
+<input class="w-5 h-5 rounded bg-surface accent-primary cursor-pointer" type="checkbox"/>
+</label>
+<!-- Screen Reader Optimization -->
+<label class="flex items-center justify-between p-3.5 rounded-lg bg-surface-container cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Screen Reader Mesh Description Tags</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Injects semantic spatial hierarchy announcements into assistive technology focus traps.</span>
+</div>
+<input checked="" class="w-5 h-5 rounded bg-surface accent-primary cursor-pointer" type="checkbox"/>
+</label>
+</div>
+</section>
+</div>
+<!-- Right Column: System Info, Live Diagnostics, Reset Deck -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- SECTION E: SYSTEM INFORMATION & DIAGNOSTICS -->
+<section class="bg-surface-container-low rounded-xl p-5 flex flex-col gap-5 shadow-sm" id="section-system">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[1.25rem] text-primary">terminal</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">System Diagnostic</h2>
+</div>
+<div class="flex flex-col gap-2 p-3.5 rounded-lg bg-surface-container">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Engine Build</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">Immersa v2.4.1</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Compile Target</span>
+<span class="font-code-sm text-code-sm text-primary">Build #8942-ARM64</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">WebXR Device API</span>
+<span class="font-code-sm text-code-sm text-tertiary">Compatible (Level 3)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Max Allocatable VRAM</span>
+<span class="font-code-sm text-code-sm text-on-surface">8,192 MB Shared</span>
+</div>
+</div>
+<!-- Real-Time Telemetry Mini-Card -->
+<div class="flex flex-col gap-3 p-3.5 rounded-lg bg-surface-container">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">GPU Thermal Load</span>
+<span class="font-code-sm text-code-sm text-tertiary">38°C — Nominal</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary h-1.5 rounded-full" style="width: 24%"></div>
+</div>
+<div class="flex justify-between items-center font-code-sm text-[0.625rem] text-on-surface-variant">
+<span>Allocated Buffers: 142</span>
+<span>Shader Cache: 98% hit</span>
+</div>
+</div>
+<div class="flex flex-col gap-2.5 pt-2">
+<button class="w-full h-9 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 transition-colors" id="btn-export-profile" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">download</span>
+<span>Export Settings (.json)</span>
+</button>
+<!-- Reset Defaults Button with alert modal confirmation trigger -->
+<button class="w-full h-9 rounded-lg bg-error-container/20 hover:bg-error-container/30 text-error font-label-md text-label-md flex items-center justify-center gap-2 transition-colors" id="btn-reset-modal-trigger" type="button">
+<span class="material-symbols-outlined text-[1.125rem]">restart_alt</span>
+<span>Restore Factory Defaults</span>
+</button>
+</div>
+</section>
+<!-- Quick Help & Spatial Docs card -->
+<section class="bg-surface-container-low rounded-xl p-5 flex flex-col gap-4 shadow-sm">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[1.25rem] text-secondary">menu_book</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Spatial Engine Docs</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Learn more about configuring custom WebGPU pipeline steps, baking ray-traced reflections, or binding Apple Vision Pro hand-tracking parameters.
+          </p>
+<div class="flex flex-col gap-2">
+<a class="p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-between text-on-surface transition-colors" href="#">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[1rem] text-primary">bolt</span>
+<span class="font-label-md text-label-md">WebGPU Performance Guide</span>
+</div>
+<span class="material-symbols-outlined text-[1rem] text-on-surface-variant">arrow_forward</span>
+</a>
+<a class="p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-between text-on-surface transition-colors" href="#">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[1rem] text-secondary">devices</span>
+<span class="font-label-md text-label-md">OpenXR Profiles & HMD Rig</span>
+</div>
+<span class="material-symbols-outlined text-[1rem] text-on-surface-variant">arrow_forward</span>
+</a>
+</div>
+</section>
+</div>
+</div>
+</div>
+<!-- Confirmation Alert Modal Preview (Hidden by default, triggered by Reset Defaults) -->
+<div class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center hidden p-4" id="reset-modal">
+<div class="w-full max-w-md bg-surface-container rounded-xl p-6 flex flex-col gap-4 shadow-2xl">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-error-container/30 text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[1.5rem]">warning</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Restore Defaults?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">This will reset all viewport, color theme, and pipeline settings to default.</p>
+</div>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container-lowest text-on-surface-variant font-code-sm text-code-sm">
+        Your current workspace theme and WebGPU configurations will revert to the standard Immersa 2.4 image. Custom project files will remain safe.
+      </div>
+<div class="flex items-center justify-end gap-3 pt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors" id="btn-cancel-modal" type="button">
+          Cancel
+        </button>
+<button class="px-4 py-2 rounded-lg bg-error hover:bg-error/90 text-on-error font-label-md text-label-md transition-colors" id="btn-confirm-reset" type="button">
+          Yes, Reset All
+        </button>
+</div>
+</div>
+</div>
+<!-- Notification Toast (Feedback) -->
+<div class="fixed bottom-6 right-6 z-50 px-4 py-3 rounded-xl bg-surface-container-high text-on-surface shadow-xl flex items-center gap-3 translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toast-feedback">
+<span class="material-symbols-outlined text-tertiary text-[1.25rem]">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-message">Settings updated successfully</span>
+</div>
+</div>
+<script>
+  function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  // Accent button toggle interactive feedback
+  const accentButtons = document.querySelectorAll('.accent-btn');
+  accentButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      accentButtons.forEach(b => b.classList.remove('ring-1', 'ring-secondary-container', 'ring-primary-container', 'ring-tertiary'));
+      btn.classList.add('ring-1', 'ring-primary-container');
+      showToast('Accent emitter updated');
+    });
+  });
+
+  // Reset modal logic
+  const modal = document.getElementById('reset-modal');
+  const triggerBtn = document.getElementById('btn-reset-modal-trigger');
+  const cancelBtn = document.getElementById('btn-cancel-modal');
+  const confirmBtn = document.getElementById('btn-confirm-reset');
+  const toast = document.getElementById('toast-feedback');
+  const toastMsg = document.getElementById('toast-message');
+
+  function showToast(msg) {
+    if (toast && toastMsg) {
+      toastMsg.textContent = msg;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 2500);
+    }
+  }
+
+  if (triggerBtn && modal) {
+    triggerBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+    });
+  }
+
+  if (cancelBtn && modal) {
+    cancelBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+  }
+
+  if (confirmBtn && modal) {
+    confirmBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      showToast('All engine settings restored to defaults');
+    });
+  }
+
+  const exportBtn = document.getElementById('btn-export-profile');
+  if (exportBtn) {
+    exportBtn.addEventListener('click', () => {
+      showToast('Settings configuration exported (immersa-profile.json)');
+    });
+  }
+</script></main></div>
+<script id="immersa-navigation-pipeline">
+(function () {
+  const LOGIN = "../login_welcome/code.html";
+  const ROUTES = {
+    "dashboard": "../main_dashboard/code.html", "explore": "../explore_gallery/code.html",
+    "my-projects": "../my_projects_library/code.html", "create-project": "../create_project/code.html",
+    "3d-models": "../3d_model_explorer/code.html", "ar-preview": "../ar_experience_preview/code.html",
+    "vr-worlds": "../vr_environment_explorer/code.html", "settings": "../studio_settings/code.html"
+  };
+  const isLogin = /\/login_welcome\/code\.html$/i.test(location.pathname);
+  const access = new URLSearchParams(location.search).get("immersa_access") === "1";
+  try {
+    if (access) sessionStorage.setItem("immersa_pipeline_access", "1");
+    if (!isLogin && !access && sessionStorage.getItem("immersa_pipeline_access") !== "1") {
+      location.replace(LOGIN); return;
+    }
+  } catch (e) {
+    if (!isLogin && !access) { location.replace(LOGIN); return; }
+  }
+  function go(route) { if (ROUTES[route]) location.href = ROUTES[route] + "?immersa_access=1"; }
+  document.querySelectorAll("a[data-path]").forEach(function (a) {
+    const route = a.getAttribute("data-path");
+    if (ROUTES[route]) a.setAttribute("href", ROUTES[route] + "?immersa_access=1");
+  });
+  document.addEventListener("click", function (event) {
+    const link = event.target.closest("a[data-path]");
+    if (link) {
+      const route = link.getAttribute("data-path");
+      if (ROUTES[route]) { event.preventDefault(); go(route); return; }
+    }
+    const el = event.target.closest("a,button");
+    if (!el) return;
+    const label = (el.innerText || el.getAttribute("aria-label") || el.title || "").replace(/\s+/g, " ").trim().toLowerCase();
+    if (isLogin) return;
+    if (/\b(log ?out|exit workspace)\b/.test(label)) {
+      event.preventDefault(); try { sessionStorage.removeItem("immersa_pipeline_access"); } catch(e) {}
+      location.href = LOGIN; return;
+    }
+    if (/\b(new project|create project|add project)\b/.test(label) && !/\/create_project\/code\.html$/i.test(location.pathname)) { event.preventDefault(); go("create-project"); return; }
+    if (/\b(view in ar|launch ar simulation|ar preview)\b/.test(label)) { event.preventDefault(); go("ar-preview"); return; }
+    if (/\b(open 3d viewer|3d models|view model)\b/.test(label)) { event.preventDefault(); go("3d-models"); return; }
+    if (/\b(enter vr scene|vr worlds|launch vr)\b/.test(label)) { event.preventDefault(); go("vr-worlds"); return; }
+    if (/\b(view all|my projects|return to projects)\b/.test(label)) { event.preventDefault(); go("my-projects"); return; }
+    if (/\b(back to dashboard|exit to dashboard|return to dashboard|dashboard)\b/.test(label)) { event.preventDefault(); go("dashboard"); }
+  }, true);
+})();
+</script>
+
+</body></html>

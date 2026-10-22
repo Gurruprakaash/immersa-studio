@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-primary-fixed":"#001e2c","secondary":"#cabeff","on-error":"#690005","on-tertiary-fixed":"#002113","on-background":"#dfe2ef","primary":"#8ed5ff","on-secondary-fixed-variant":"#4918c8","tertiary-fixed":"#6ffbbe","on-secondary-container":"#b9aaff","tertiary-fixed-dim":"#4edea3","on-tertiary-container":"#004e34","surface-container-lowest":"#0a0e17","surface":"#0f131c","on-secondary":"#32009a","on-primary-container":"#004965","surface-bright":"#353943","surface-variant":"#31353f","surface-dim":"#0f131c","background":"#0f131c","on-secondary-fixed":"#1c0062","error":"#ffb4ab","primary-container":"#38bdf8","error-container":"#93000a","surface-container":"#1c2029","inverse-primary":"#00668a","on-tertiary":"#003824","on-error-container":"#ffdad6","surface-container-high":"#262a34","on-surface":"#dfe2ef","surface-tint":"#7bd0ff","on-surface-variant":"#bdc8d1","tertiary":"#56e5a9","inverse-on-surface":"#2c303a","secondary-container":"#4918c8","inverse-surface":"#dfe2ef","surface-container-highest":"#31353f","surface-container-low":"#181b25","outline-variant":"#3e484f","primary-fixed-dim":"#7bd0ff","tertiary-container":"#30c88f","on-primary":"#00354a","secondary-fixed-dim":"#cabeff","on-tertiary-fixed-variant":"#005236","secondary-fixed":"#e6deff","primary-fixed":"#c4e7ff","on-primary-fixed-variant":"#004c69","outline":"#87929a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","space-lg":"1rem","gutter":"0.75rem","space-md":"0.75rem","margin":"1rem","space-xl":"1.5rem"},"fontFamily":{"label-md":["Geist"],"body-sm":["Geist"],"code-sm":["Geist"],"headline-xl":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Geist"],"label-sm":["Geist"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Geist"]},"fontSize":{"label-md":["0.8125rem",{"lineHeight":"1.125rem","letterSpacing":"0.01em","fontWeight":"500"}],"body-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0","fontWeight":"400"}],"code-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0","fontWeight":"400"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-sm":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"-0.005em","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["1.25rem",{"lineHeight":"1.75rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["1rem",{"lineHeight":"1.5rem","letterSpacing":"-0.01em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[16.25rem] bg-surface-container-low border-r border-outline-variant/30 z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 flex items-center gap-space-sm px-space-lg border-b border-outline-variant/20"><img alt="Immersa Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UxRjRhOHp4MV7MI9jV_jGW7riXISqHX1V3tU4CIggF3u6CTvzNjWPE0B3ddtb9W-aRbz29_NveN1rlpwGpvW8PVUH4b3-r2yamPXhKbbPahTseHFSfV_sqTB_y0OTa6W2182l_KDHSraf8c54oz4gfZOw8NYdSf_jy9GmFWNcPl6FHOH4bqkfEwYi05KU-oFpsw6BIwdfYf2gi6kyUdojfblN2xAi484V7nXxDikGVSzX7c00zj5LLvdY"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Immersa</span><span class="font-label-sm text-label-sm text-primary font-semibold">Studio</span></div><span class="font-code-sm text-code-sm text-on-surface-variant/70">v2.4 Spatial</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant/60">Workspace</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-secondary-container text-on-surface font-semibold rounded-lg shadow-sm"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="../main_dashboard/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">space_dashboard</span><span class="font-body-md text-body-md">Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-all bg-secondary-container text-on-surface font-semibold rounded-lg shadow-sm" data-path="explore" href="#"><span class="material-symbols-outlined text-[1.25rem]">explore</span><span class="font-body-md text-body-md">Explore</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="my-projects" href="../my_projects_library/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">folder_special</span><span class="font-body-md text-body-md">My Projects</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="3d-models" href="../3d_model_explorer/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">view_in_ar</span><span class="font-body-md text-body-md">3D Models</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="ar-preview" href="../ar_experience_preview/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">stream_apps</span><span class="font-body-md text-body-md">AR Preview</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="vr-worlds" href="../vr_environment_explorer/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">vrpano</span><span class="font-body-md text-body-md">VR Worlds</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="../studio_settings/code.html?immersa_access=1"><span class="material-symbols-outlined text-[1.25rem]">tune</span><span class="font-body-md text-body-md">Settings</span></a></nav></div></div><div class="p-space-md flex flex-col gap-space-sm border-t border-outline-variant/20 bg-surface-container-lowest/40"><div class="flex items-center justify-between px-space-sm py-space-xs rounded bg-surface-container-high/40 border border-outline-variant/30"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="font-label-sm text-label-sm text-on-surface">Workspace Synced</span></div><span class="font-code-sm text-code-sm text-on-surface-variant/70">Cloud ID-4</span></div><div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-high transition-colors"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1KypNwueVUdqZAMNJf7dN_QRZf-04F0m6IGqJ2RSURCoftiO1DC3IyXdYIRGbDleAZ5yFX9cBoXdPeIdtlo0hgSm7-O8g5W3DalWSlmELGVXNyeo_FzS95FzEhhaqeXsU8YQQAryRmdR8VI3TiK6y99Q8ksF3sDBjflzTBU5gfaSygAagWtJNMHg1Po1kl3IPvfTkG7zfJZO7pDp6_mymwE4krybcV6LcXwe4y31sjBt3C3G-KsIQ"/><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">Elena Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Spatial Designer</span></div></div><button aria-label="Account Actions" class="text-on-surface-variant hover:text-on-surface transition-colors p-space-xs" type="button"><span class="material-symbols-outlined text-[1.125rem]">more_vert</span></button></div></div></aside><div class="pl-[16.25rem]"><header class="fixed top-0 left-[16.25rem] right-0 h-16 bg-surface-container-low/80 backdrop-blur-xl border-b border-outline-variant/30 z-40 px-6 flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface-variant/70">Studio Canvas</span><span class="text-outline-variant/60">/</span><span class="font-label-md text-label-md text-on-surface font-medium">Workstation Active</span></div><div class="flex-1 max-w-md mx-space-xl"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-[1.125rem] text-on-surface-variant pointer-events-none">search</span><input class="w-full h-9 pl-9 pr-14 bg-surface rounded-lg border border-outline-variant/40 text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/60 focus:outline-none focus:border-primary-container transition-colors" placeholder="Search projects, 3D assets, environments..." type="text"/><kbd class="absolute right-space-sm px-1.5 py-0.5 rounded bg-surface-container-high border border-outline-variant/50 font-code-sm text-[0.625rem] text-on-surface-variant">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><button class="h-9 px-space-lg rounded-lg bg-secondary-container hover:bg-secondary-container/90 text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[1.125rem]">add</span><span>New Project</span></button><div class="h-5 w-px bg-outline-variant/30"></div><button aria-label="Notifications" class="relative p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[1.25rem]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface-container-low"></span></button><button aria-label="Documentation" class="p-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[1.25rem]">help</span></button><div class="h-8 w-8 rounded-full border border-outline-variant/50 overflow-hidden flex-shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1KypNwueVUdqZAMNJf7dN_QRZf-04F0m6IGqJ2RSURCoftiO1DC3IyXdYIRGbDleAZ5yFX9cBoXdPeIdtlo0hgSm7-O8g5W3DalWSlmELGVXNyeo_FzS95FzEhhaqeXsU8YQQAryRmdR8VI3TiK6y99Q8ksF3sDBjflzTBU5gfaSygAagWtJNMHg1Po1kl3IPvfTkG7zfJZO7pDp6_mymwE4krybcV6LcXwe4y31sjBt3C3G-KsIQ"/></div></div></header><main class="w-full min-h-screen pt-16 bg-surface"><div class="flex flex-col w-full">
+<script>
+    (function syncSidebar() {
+      const exploreLink = document.querySelector('nav a[data-path="explore"]');
+      if (exploreLink) {
+        document.querySelectorAll('nav a').forEach(a => {
+          a.className = "flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all";
+        });
+        exploreLink.className = "flex items-center gap-space-md px-space-md py-space-sm rounded-lg bg-secondary-container text-on-surface font-semibold shadow-sm relative";
+        if (!exploreLink.querySelector('.explore-dot')) {
+          const dot = document.createElement('span');
+          dot.className = 'explore-dot w-2 h-2 rounded-full bg-primary-container absolute right-3';
+          exploreLink.appendChild(dot);
+        }
+      }
+      const breadcrumb = document.querySelector('header .font-label-md.text-on-surface');
+      if (breadcrumb) breadcrumb.textContent = 'Explore Gallery';
+      const headerSearch = document.querySelector('header input[type="text"]');
+      if (headerSearch) headerSearch.placeholder = 'Search by keyword, tag, or creator...';
+    })();
+  </script>
+<div class="px-8 py-7 flex flex-col gap-7">
+<!-- Hero / Gallery Intro Section -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-2">
+<div class="flex flex-col gap-2 max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+            Community Matrix
+          </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant/60">Updated 14m ago</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Explore Immersa Community Gallery</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Discover ready-to-use 3D models, interactive AR simulations, and immersive VR environments created by spatial designers worldwide. Duplicate and customize any project in your private studio workspace.
+        </p>
+</div>
+<!-- Quick Stats Metrics -->
+<div class="flex items-center gap-4 bg-surface-container-low p-2 rounded-xl border border-outline-variant/30 self-start lg:self-auto">
+<div class="px-4 py-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Public Scenes</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">2,840</span>
+</div>
+<div class="h-8 w-px bg-outline-variant/30"></div>
+<div class="px-4 py-2 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Forks</span>
+<span class="font-headline-md text-headline-md text-tertiary font-bold">14.2k</span>
+</div>
+</div>
+</div>
+<!-- Filter & Search Toolbar -->
+<div class="flex flex-col gap-4 bg-surface-container-low p-4 rounded-xl border border-outline-variant/30">
+<div class="flex flex-col md:flex-row gap-3 items-center justify-between">
+<!-- Search bar with clear button -->
+<div class="relative w-full md:w-96 flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-[1.2rem] text-on-surface-variant pointer-events-none">search</span>
+<input class="w-full h-10 pl-9 pr-9 bg-surface-container rounded-lg border border-outline-variant/40 text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary-container transition-colors" id="gallerySearchInput" placeholder="Search modern interior, space, museum..." type="text" value="modern interior"/>
+<button class="absolute right-2.5 p-1 rounded-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="document.getElementById('gallerySearchInput').value=''; document.getElementById('gallerySearchInput').focus();" title="Clear search" type="button">
+<span class="material-symbols-outlined text-[1rem]">close</span>
+</button>
+</div>
+<!-- Filter Pill Group -->
+<div class="flex items-center gap-1.5 overflow-x-auto w-full md:w-auto pb-1 md:pb-0" id="categoryPillGroup">
+<button class="category-pill h-9 px-4 rounded-lg bg-secondary-container text-on-surface font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center gap-1.5" data-category="all" type="button">
+<span>All Assets</span>
+<span class="text-[0.7rem] px-1.5 py-0.5 rounded-full bg-white/10">248</span>
+</button>
+<button class="category-pill h-9 px-4 rounded-lg bg-surface-container border border-outline-variant/30 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all flex items-center gap-1.5" data-category="3d" type="button">
+<span>3D Models</span>
+<span class="text-[0.7rem] px-1.5 py-0.5 rounded-full bg-surface-container-highest">114</span>
+</button>
+<button class="category-pill h-9 px-4 rounded-lg bg-surface-container border border-outline-variant/30 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all flex items-center gap-1.5" data-category="ar" type="button">
+<span>AR Experiences</span>
+<span class="text-[0.7rem] px-1.5 py-0.5 rounded-full bg-surface-container-highest">62</span>
+</button>
+<button class="category-pill h-9 px-4 rounded-lg bg-surface-container border border-outline-variant/30 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all flex items-center gap-1.5" data-category="vr" type="button">
+<span>VR Environments</span>
+<span class="text-[0.7rem] px-1.5 py-0.5 rounded-full bg-surface-container-highest">72</span>
+</button>
+</div>
+</div>
+<!-- Secondary filter bar -->
+<div class="flex flex-wrap items-center justify-between pt-3 border-t border-outline-variant/20 gap-3">
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 uppercase tracking-wider">Refine:</span>
+<div class="relative">
+<select class="h-8 pl-3 pr-8 appearance-none bg-surface-container rounded-md border border-outline-variant/40 text-on-surface font-label-md text-label-md focus:outline-none focus:border-primary-container cursor-pointer transition-colors">
+<option>Sort by: Most Popular</option>
+<option>Sort by: Newest Releases</option>
+<option>Sort by: Highest Rated</option>
+<option>Sort by: Mesh Complexity (Low-Poly)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 text-[1rem] pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+<div class="relative">
+<select class="h-8 pl-3 pr-8 appearance-none bg-surface-container rounded-md border border-outline-variant/40 text-on-surface font-label-md text-label-md focus:outline-none focus:border-primary-container cursor-pointer transition-colors">
+<option>License: Free to Use</option>
+<option>License: CC-BY 4.0</option>
+<option>License: Immersa Commercial</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 text-[1rem] pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+<div class="relative">
+<select class="h-8 pl-3 pr-8 appearance-none bg-surface-container rounded-md border border-outline-variant/40 text-on-surface font-label-md text-label-md focus:outline-none focus:border-primary-container cursor-pointer transition-colors">
+<option>Format: GLTF / USDZ</option>
+<option>Format: FBX / OBJ</option>
+<option>Format: WebXR Bundle</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 text-[1rem] pointer-events-none text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="font-body-sm text-body-sm">View:</span>
+<button aria-label="Grid view active" class="p-1 rounded bg-surface-container-high text-primary" type="button"><span class="material-symbols-outlined text-[1.15rem]">grid_view</span></button>
+<button aria-label="List view" class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[1.15rem]">view_list</span></button>
+</div>
+</div>
+</div>
+<!-- Active Drawer / Selected Item Quick Showcase Banner -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-surface-container-low via-surface-container to-surface-container-low border border-primary-container/30 p-5 shadow-xl transition-all" id="inspectorDrawer">
+<div class="absolute -top-16 -right-16 w-64 h-64 rounded-full bg-secondary-container/15 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-lg bg-surface-container-highest flex items-center justify-center border border-outline-variant/40 text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[2rem]">view_in_ar</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary border border-tertiary/20 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Ready to Inspect
+              </span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">UUID: imm-arch-9821</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-0.5">Quick Stage: Modern Scandinavian Loft Suite</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Contains high-res PBR textures, pre-baked indirect lighting, and spatial audio anchors.</p>
+</div>
+</div>
+<!-- Telemetry Data + CTA -->
+<div class="flex flex-wrap items-center gap-4">
+<div class="flex items-center gap-3 bg-surface/60 px-3.5 py-2 rounded-lg border border-outline-variant/30">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">Polygons</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">42.4k Tris</span>
+</div>
+<div class="h-6 w-px bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">Size</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">8.6 MB</span>
+</div>
+<div class="h-6 w-px bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">Standard</span>
+<span class="font-code-sm text-code-sm text-primary font-semibold">WebXR 1.1</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="h-9 px-4 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md border border-outline-variant/40 transition-colors flex items-center gap-1.5" onclick="previewItem('Modern Interior Loft', 'VR Environment', '42.4k Tris', '8.6 MB')" type="button">
+<span class="material-symbols-outlined text-[1.1rem]">visibility</span>
+<span>Inspect Rig</span>
+</button>
+<button class="h-9 px-4 rounded-lg bg-secondary-container hover:bg-secondary-container/90 text-on-surface font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center gap-1.5" onclick="alert('Project successfully cloned into My Projects workspace!')" type="button">
+<span class="material-symbols-outlined text-[1.1rem]">file_copy</span>
+<span>Clone to My Projects</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Gallery Grid (8 Items) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+<!-- Item 1: Modern Interior Loft -->
+<div class="group flex flex-col rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-200 overflow-hidden shadow-sm hover:shadow-xl">
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Photorealistic 3D architectural render of a modern minimalist interior loft apartment with floor-to-ceiling glass windows, poured concrete floors, warm wooden accents, and soft twilight illumination in an ultra high-end digital spatial computing style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBXEKxHsSxiQ0a_IVEjuaeps6lPsbLOynOzubayIq6fpGkM5e-gx6gabUnw1Dv07raUpfB9c3oVhDDSnzqQQv2BUFhX65tp1_PJ-ZnytQN9OpbVacq-07koOq3TuRE5-GywsGwecA-Z7rNMYXkqL2MS6IMR-RgMjMOW7aBXI3fAaZQYE4TyjDMKhrwhXjfHy83Kzyv9bRsNyM4nyWqXMmaT4BuXYMAIk0_Or9_jFgRGFBt3n3vbgLk"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-secondary font-medium">VR Environment</span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-amber-300">
+<span class="material-symbols-outlined text-[0.9rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm mb-1">
+<span>@arch_space</span>
+<span>1.2k forks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Modern Interior Loft</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Spacious open-concept living area with baked global illumination and raytraced reflections.</p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between gap-2">
+<button class="h-8 px-3 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex-1 text-center" onclick="previewItem('Modern Interior Loft', 'VR Environment', '42.4k Tris', '8.6 MB')" type="button">
+              View Details
+            </button>
+<button class="h-8 px-3 rounded-md bg-secondary-container hover:bg-secondary-container/90 text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[1rem]">vrpano</span>
+<span>Preview VR</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2: Space Explorer Rover -->
+<div class="group flex flex-col rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-200 overflow-hidden shadow-sm hover:shadow-xl">
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A high-precision hard-surface 3D model of an autonomous planetary space exploration rover on red Martian terrain, featuring intricate mechanical suspension, robotic arms, solar panels, and scientific sensor suites with cyan rim lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMoLDooaomLd63lmpAUO__g5l3EvBk3WbEEE6vlMAwNr4rthXEk235fNUZI1F-2Oza7BPCoo3vycMnQ3E8Ht1JOQ4aU7u-8xcRktNpNYu1DBeBFl4hq60sPOTd8mZ44n-waFdp1dV14i2Eq4zprVCAfIDbHes2W0vuGCrZocbwBF8zbymlcH3biQBnc3_FWhMZkb-WG-dhjQF9IDG-BMwodKCLBT3f9hTzLQCcVKVEnxHNjJr05jya"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-primary font-medium">3D Model</span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-amber-300">
+<span class="material-symbols-outlined text-[0.9rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.8</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm mb-1">
+<span>@nasa_open</span>
+<span>3.4k forks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Space Explorer Rover</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Rigged rover chassis with articulated 6-wheel rocker-bogie kinematics and camera gimbals.</p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between gap-2">
+<button class="h-8 px-3 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex-1 text-center" onclick="previewItem('Space Explorer Rover', '3D Model', '68.2k Tris', '14.1 MB')" type="button">
+              Inspect 3D
+            </button>
+<button class="h-8 w-8 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Bookmark" type="button">
+<span class="material-symbols-outlined text-[1.1rem]">bookmark_border</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3: Historical Museum Tour -->
+<div class="group flex flex-col rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-200 overflow-hidden shadow-sm hover:shadow-xl">
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dramatic 3D virtual reality neoclassical museum gallery hall featuring marble columns, vaulted arch ceilings, classical renaissance statues on pedestals, and directional spotlights casting long architectural shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAmZBm_HCMIhxqmOd96w3HVVO0wp-dsujZqqBE5BoHBKhaUwN9biGRyrjaoLo7Q9OCtnUVbuRCmH623HophOcPbLqoJ-fwEhpwZ7RIjzUz21zEmQuUntLSxVTOxCSMrS_Onx8-CGXEqbWEV7ByMVS1M9DzR7N-HFvto3wLA5lZ2iE4-GBWIetEoRDUIQeWcwRW8M0H4n_VUyowNpj1dDXULjt0OJflJXU7-AX6eJHBPe-e_6hhPN7f"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-secondary font-medium">VR Environment</span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-amber-300">
+<span class="material-symbols-outlined text-[0.9rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>5.0</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm mb-1">
+<span>@heritage_lab</span>
+<span>890 forks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Historical Museum Tour</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Multi-room classical rotunda with interactive artifact hotspots and spatial audio narration.</p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between gap-2">
+<button class="h-8 px-3 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex-1 text-center" onclick="previewItem('Historical Museum Tour', 'VR Environment', '112.5k Tris', '28.4 MB')" type="button">
+              View Details
+            </button>
+<button class="h-8 px-3 rounded-md bg-secondary-container hover:bg-secondary-container/90 text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[1rem]">vrpano</span>
+<span>Preview VR</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 4: Nature Walk & Redwood Pines -->
+<div class="group flex flex-col rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-200 overflow-hidden shadow-sm hover:shadow-xl">
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dense atmospheric redwood pine forest landscape in 3D with volumetric god rays streaming through giant trees, fern covered mossy ground, winding dirt pathway, and morning mist in cold emerald lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcHU5I_q6AHfGMFIlLFSQetH2RJWHwGd1nZvBZY9J-QYg1CukcehCByX1QWjXgA_FA9nam69se3_vxE51_Asd7rtVEsq8sb-UVqVu8IBGpeO4VSWB4H1KXls-0mvvCJk0Ad0Nkh_Z3WJydM4GbigikIi0bXCchPvMCPrqBIgBByjYcZLEdHm7bZKIcqQngcBfspi-YAEJjY9bYNj7cmhp2kiKS5_XXIUc2QKbKEmDht1Vnb6d1izDi"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-secondary font-medium">VR Environment</span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-amber-300">
+<span class="material-symbols-outlined text-[0.9rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.7</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm mb-1">
+<span>@biome_studio</span>
+<span>730 forks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Nature Walk & Redwood Pines</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Procedural foliage system optimized for high frame-rate spatial locomotion in VR headsets.</p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between gap-2">
+<button class="h-8 px-3 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex-1 text-center" onclick="previewItem('Nature Walk & Redwood Pines', 'VR Environment', '88.1k Tris', '21.0 MB')" type="button">
+              Walkthrough
+            </button>
+<button class="h-8 w-8 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Bookmark" type="button">
+<span class="material-symbols-outlined text-[1.1rem]">bookmark_border</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 5: Product Showcase: Audio Pods -->
+<div class="group flex flex-col rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-200 overflow-hidden shadow-sm hover:shadow-xl">
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Futuristic floating wireless earbuds and translucent charging case suspended in air, exploded view showing internal acoustic micro-drivers, neodymium magnets, and metallic accents with luminous violet backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgHnPMZOnLGHsHOYe9HGDA9EMLQgyUyvxCrGIc0ZkC0fdqnlBlHhMX5hUemR7aR4xHdvtIR2n8g0Gg2uxzKcAoewf8ckwLtnOKZijRnel8f5Rcn6vIfOwHy5ByGsYo_4IwPus5WFFFL8d-kAdw6RM5KF0GWqe_fIcBrru0uap99L_burFBTHHoy3iom8UHUhmgvZsAkrYhKMdcGu3TE8kZRiJgv_uD-HhUGPm5lWlIUcowj-pkrMFN"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-tertiary font-medium">AR Experience</span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-amber-300">
+<span class="material-symbols-outlined text-[0.9rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm mb-1">
+<span>@sound_design</span>
+<span>2.1k forks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Product Showcase: Audio Pods</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Interactive exploded component assembly animation designed for mobile WebAR placement.</p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between gap-2">
+<button class="h-8 px-3 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex-1 text-center" onclick="previewItem('Product Showcase: Audio Pods', 'AR Experience', '26.4k Tris', '4.8 MB')" type="button">
+              View Model
+            </button>
+<button class="h-8 px-3 rounded-md bg-primary-container/20 hover:bg-primary-container/30 text-primary-container font-label-md text-label-md flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[1rem]">view_in_ar</span>
+<span>Launch AR</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 6: Virtual University Campus -->
+<div class="group flex flex-col rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-200 overflow-hidden shadow-sm hover:shadow-xl">
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Expansive virtual university campus quadrangle architectural layout in 3D, featuring glass lecture theaters, modern walkways, water feature fountain, and digital presentation screens under a clear sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAULqihsZYqIUeIsUgAC8fvoBMQayNCnKEhJGjDZA2zqiFFHCwcLAKOrWIiFtz2KVQ0K6hGVOKeIu-j6HM7hwV-u0_ueFYXdzCP34BSa3uPHtrHU1EdJS3E0ftTuwvBx-_F8rbWS4MTRUaAhjGUXAHvOZHUgiSXN3gGcpoowwAVFZTyEmdjlR1KLMDZRITX0KaPxdk-PLKUwSbkPJaNWTCvg_4cSjZXKXUWIbOd3hGEU-6n0kHCc3Xg"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-secondary font-medium">VR World</span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-amber-300">
+<span class="material-symbols-outlined text-[0.9rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.6</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm mb-1">
+<span>@campus_xr</span>
+<span>610 forks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Virtual University Campus</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Multiplayer spatial classroom setup with collaborative whiteboard zones and stage seating.</p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between gap-2">
+<button class="h-8 px-3 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex-1 text-center" onclick="previewItem('Virtual University Campus', 'VR World', '94.0k Tris', '32.1 MB')" type="button">
+              Explore Scene
+            </button>
+<button class="h-8 w-8 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Bookmark" type="button">
+<span class="material-symbols-outlined text-[1.1rem]">bookmark_border</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 7: Eames Style Lounge Armchair -->
+<div class="group flex flex-col rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-200 overflow-hidden shadow-sm hover:shadow-xl">
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Detailed 3D studio model of an iconic mid-century modern lounge chair and matching ottoman in rich dark walnut wood shell with button-tufted black leather cushions on a dark reflective pedestal floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY6YhY0nqQTjZx6BXFfkNvulK58gBcheZICpVtJRFCCqWj5_UVPNRJcFmJzwJv7AQTZyoYcI2MsuchVFyXKhPaBN2nLmEL4ch8bwrkgv8oqcy3VJrzzHJ_a1vWc2wSvJrzMKRfD5buP5i0EetnFoFBGwBHoUG-QShehGaoCg3cl-RnanrJBxkkV6dCwFD46qy7LPGmyTJsbdNcLEWKTblN8OewoOuFLa9-1f2hhvqxmXYvqeIk8AzX"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-primary font-medium">3D Model</span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-amber-300">
+<span class="material-symbols-outlined text-[0.9rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm mb-1">
+<span>@danish_craft</span>
+<span>1.8k forks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Eames Style Lounge Armchair</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">4K PBR material maps with subsurface scattering for hyper-accurate leather micro-creases.</p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between gap-2">
+<button class="h-8 px-3 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex-1 text-center" onclick="previewItem('Eames Style Lounge Armchair', '3D Model', '18.9k Tris', '3.9 MB')" type="button">
+              View 3D
+            </button>
+<button class="h-8 w-8 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Bookmark" type="button">
+<span class="material-symbols-outlined text-[1.1rem]">bookmark_border</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 8: Futuristic Drone Chassis -->
+<div class="group flex flex-col rounded-xl bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-200 overflow-hidden shadow-sm hover:shadow-xl">
+<div class="relative h-48 w-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Futuristic sci-fi surveillance quadcopter drone 3D render with carbon-fiber frame, glowing neon cyan propulsion rotors, integrated lidar scanner dome, and high-tech telemetry UI overlay." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjOWnklH6XWQt5SXqNDPLiAQ2JHQbsUSsjTssZbrSxig_BB0twEnIaY5nHtTT4Nbu4OPn8WXf-4Vq4v5ziSaDEvI26o5EzGB1ETMNBZfsQTqbPkWWauLAxhsK-tzjR2RX4stkCDFyw5pg7rQmPwdMKefWEdiUlGbmQuhFrnRZTW-b-y3kDymISEm6Q5eiAcZ5WU1z1EDDslkYo7PVOdtyMq7f_IB9XDQVq28cuG-Wy1URWX13pBqIT"/>
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-primary font-medium">3D Model</span>
+</div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface/80 backdrop-blur-md border border-white/10 font-label-sm text-label-sm text-amber-300">
+<span class="material-symbols-outlined text-[0.9rem]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.8</span>
+</div>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-3">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm mb-1">
+<span>@cyber_mech</span>
+<span>1.5k forks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Futuristic Drone Chassis</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Lightweight aerofoil body with configurable motor pods and flight physics presets.</p>
+</div>
+<div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between gap-2">
+<button class="h-8 px-3 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex-1 text-center" onclick="previewItem('Futuristic Drone Chassis', '3D Model', '34.7k Tris', '7.2 MB')" type="button">
+              Inspect 3D
+            </button>
+<button class="h-8 w-8 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" title="Bookmark" type="button">
+<span class="material-symbols-outlined text-[1.1rem]">bookmark_border</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination & Infinite Scroll indicator -->
+<div class="flex flex-col sm:flex-row items-center justify-between py-4 border-t border-outline-variant/30 text-on-surface-variant gap-4">
+<div class="font-body-sm text-body-sm flex items-center gap-2">
+<span>Showing <strong class="text-on-surface">8</strong> of <strong class="text-on-surface">248</strong> items</span>
+<span class="text-outline-variant/50">•</span>
+<span>Page 1 of 31</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="h-8 w-8 rounded-md bg-surface-container text-on-surface-variant/40 flex items-center justify-center cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[1.1rem]">chevron_left</span>
+</button>
+<button class="h-8 w-8 rounded-md bg-secondary-container text-on-surface font-label-md text-label-md font-semibold" type="button">1</button>
+<button class="h-8 w-8 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">2</button>
+<button class="h-8 w-8 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">3</button>
+<span class="px-1 text-on-surface-variant/50">...</span>
+<button class="h-8 w-8 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">31</button>
+<button class="h-8 w-8 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[1.1rem]">chevron_right</span>
+</button>
+</div>
+<button class="font-label-md text-label-md text-primary hover:text-primary-container flex items-center gap-1 transition-colors" type="button">
+<span>Load next 24 assets</span>
+<span class="material-symbols-outlined text-[1rem]">arrow_downward</span>
+</button>
+</div>
+</div>
+<!-- Interactive script for Filter pills & Quick Stage trigger -->
+<script>
+    function previewItem(title, tag, tris, size) {
+      const drawer = document.getElementById('inspectorDrawer');
+      if (drawer) {
+        drawer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        const titleEl = drawer.querySelector('h2');
+        if (titleEl) titleEl.textContent = 'Quick Stage: ' + title;
+        const trisEl = drawer.querySelectorAll('.font-code-sm')[1];
+        if (trisEl) trisEl.textContent = tris;
+        const sizeEl = drawer.querySelectorAll('.font-code-sm')[2];
+        if (sizeEl) sizeEl.textContent = size;
+        drawer.classList.add('ring-2', 'ring-primary-container');
+        setTimeout(() => drawer.classList.remove('ring-2', 'ring-primary-container'), 1200);
+      }
+    }
+
+    document.querySelectorAll('.category-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.category-pill').forEach(p => {
+          p.className = 'category-pill h-9 px-4 rounded-lg bg-surface-container border border-outline-variant/30 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all flex items-center gap-1.5';
+        });
+        btn.className = 'category-pill h-9 px-4 rounded-lg bg-secondary-container text-on-surface font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center gap-1.5';
+      });
+    });
+  </script>
+</div></main></div>
+<script id="immersa-navigation-pipeline">
+(function () {
+  const LOGIN = "../login_welcome/code.html";
+  const ROUTES = {
+    "dashboard": "../main_dashboard/code.html", "explore": "../explore_gallery/code.html",
+    "my-projects": "../my_projects_library/code.html", "create-project": "../create_project/code.html",
+    "3d-models": "../3d_model_explorer/code.html", "ar-preview": "../ar_experience_preview/code.html",
+    "vr-worlds": "../vr_environment_explorer/code.html", "settings": "../studio_settings/code.html"
+  };
+  const isLogin = /\/login_welcome\/code\.html$/i.test(location.pathname);
+  const access = new URLSearchParams(location.search).get("immersa_access") === "1";
+  try {
+    if (access) sessionStorage.setItem("immersa_pipeline_access", "1");
+    if (!isLogin && !access && sessionStorage.getItem("immersa_pipeline_access") !== "1") {
+      location.replace(LOGIN); return;
+    }
+  } catch (e) {
+    if (!isLogin && !access) { location.replace(LOGIN); return; }
+  }
+  function go(route) { if (ROUTES[route]) location.href = ROUTES[route] + "?immersa_access=1"; }
+  document.querySelectorAll("a[data-path]").forEach(function (a) {
+    const route = a.getAttribute("data-path");
+    if (ROUTES[route]) a.setAttribute("href", ROUTES[route] + "?immersa_access=1");
+  });
+  document.addEventListener("click", function (event) {
+    const link = event.target.closest("a[data-path]");
+    if (link) {
+      const route = link.getAttribute("data-path");
+      if (ROUTES[route]) { event.preventDefault(); go(route); return; }
+    }
+    const el = event.target.closest("a,button");
+    if (!el) return;
+    const label = (el.innerText || el.getAttribute("aria-label") || el.title || "").replace(/\s+/g, " ").trim().toLowerCase();
+    if (isLogin) return;
+    if (/\b(log ?out|exit workspace)\b/.test(label)) {
+      event.preventDefault(); try { sessionStorage.removeItem("immersa_pipeline_access"); } catch(e) {}
+      location.href = LOGIN; return;
+    }
+    if (/\b(new project|create project|add project)\b/.test(label) && !/\/create_project\/code\.html$/i.test(location.pathname)) { event.preventDefault(); go("create-project"); return; }
+    if (/\b(view in ar|launch ar simulation|ar preview)\b/.test(label)) { event.preventDefault(); go("ar-preview"); return; }
+    if (/\b(open 3d viewer|3d models|view model)\b/.test(label)) { event.preventDefault(); go("3d-models"); return; }
+    if (/\b(enter vr scene|vr worlds|launch vr)\b/.test(label)) { event.preventDefault(); go("vr-worlds"); return; }
+    if (/\b(view all|my projects|return to projects)\b/.test(label)) { event.preventDefault(); go("my-projects"); return; }
+    if (/\b(back to dashboard|exit to dashboard|return to dashboard|dashboard)\b/.test(label)) { event.preventDefault(); go("dashboard"); }
+  }, true);
+})();
+</script>
+
+</body></html>
